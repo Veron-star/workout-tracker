@@ -2,7 +2,7 @@ const db = require("../models");
 
 module.exports = function (app) {
    
-    app.get("/api/workout", (req, res) => {
+    app.get("/api/workouts", (req, res) => {
          db.workOut.find({}).then(dbWorkout => {
              dbWorkout.forEach(workout => {
                  var total = 0;
