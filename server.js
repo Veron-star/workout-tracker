@@ -12,14 +12,14 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-// const MongoClient = require('mongodb').MongoClient;
-// const uri = "mongodb+srv://dbuser:Parker88@cluster0.hrzcp.mongodb.net/dbWorkout?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://dbuser:Parker88@cluster0.hrzcp.mongodb.net/dbWorkout?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
