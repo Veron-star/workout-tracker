@@ -19,7 +19,4 @@ GitHub Profile: https://github.com/Veron-star/workout-tracker
 Link: https://workout-tracker-veron.herokuapp.com/
 
 ![](/screenshot.PNG)
-<<<<<<< HEAD
-
-=======
->>>>>>> 46290ee1fb3a964e0f1b948cd7f9ae8825837a53
+![](/screenshot1.PNG)
